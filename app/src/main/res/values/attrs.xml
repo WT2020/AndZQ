@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 底部button自定义属性 -->
+    <declare-styleable name="BottomButton">
+        <attr name="background_color_pressed" format="reference"/>
+        <attr name="background_color_unpressed" format="reference"/>
+        <attr name="text_color" format="reference"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text" format="string"/>
+    </declare-styleable>
+</resources>

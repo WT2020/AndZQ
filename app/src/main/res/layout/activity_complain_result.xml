@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/my_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            >
+
+            <include layout="@layout/item_complain_company_info"/>
+
+            <include layout="@layout/item_complain_result_person"/>
+            <include layout="@layout/item_complain_reason"/>
+            <include layout="@layout/item_complain_result_result"/>
+
+            <!-- 评论时候使用的框 -->
+            <include android:id="@+id/item_evaluate" layout="@layout/item_evaluate"/>
+            <!-- 评论提交后展示的框 -->
+            <include android:visibility="gone" android:id="@+id/item_comment" layout="@layout/item_comment"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/item_repairs_button"/>
+</FrameLayout>

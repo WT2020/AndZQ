@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/blue400"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/write"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_progress_state"
+                    android:text="维修人员已接单"
+                    style="@style/RepairsTextTitle"/>
+                <TextView
+                    android:id="@+id/tv_progress_time"
+                    android:layout_alignParentRight="true"
+                    android:text="2017"
+                    style="@style/RepairsTextTitle"/>
+                <TextView
+                    android:id="@+id/tv_progress_detail"
+                    android:text="已接单，马上到达工作现场"
+                    android:layout_below="@+id/tv_progress_state"
+                    style="@style/RepairsTextTitle" />
+
+                <GridView
+                    android:id="@+id/gv_repairs_img"
+                    android:layout_below="@+id/tv_progress_detail"
+                    android:numColumns="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/item_line_horizontal"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

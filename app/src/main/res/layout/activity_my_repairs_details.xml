@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_repairs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/my_toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical"
+        tools:context="hdo.com.andzq.activity.RepairsActivity">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <include layout="@layout/item_line_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="申请人" />
+
+                        <TextView
+                            android:id="@+id/tv_proposer"
+                            style="@style/RepairsEditText"
+                            android:text="张一涵"
+                            android:textColor="@color/text_title" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="申请时间" />
+
+                        <TextView
+                            android:id="@+id/tv_application_time"
+                            style="@style/RepairsEditText"
+                            android:text="20160/09/10 15:00"
+                            android:textColor="@color/text_title" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            android:id="@+id/tv_department"
+                            style="@style/RepairsEditText"
+                            android:text="企划部门"
+                            android:textColor="@color/text_title" />
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="所在部门" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="联系方式" />
+
+                        <TextView
+                            android:id="@+id/tv_phone_num"
+                            style="@style/RepairsEditText"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:text="18683209890"
+                            android:textColor="@color/text_title" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                </LinearLayout>
+
+                <include layout="@layout/item_line_vertical" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <include layout="@layout/item_line_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="单位名称" />
+
+                        <TextView
+                            android:id="@+id/tv_company"
+                            style="@style/RepairsEditText"
+                            android:text="南充市税务局"
+                            android:textColor="@color/text_title" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="专线号码" />
+
+                        <TextView
+                            android:id="@+id/tv_line"
+                            style="@style/RepairsEditText"
+                            android:text="10180226372"
+                            android:textColor="@color/text_title" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="故障出现时间" />
+
+                        <TextView
+                            android:id="@+id/tv_downtime"
+                            style="@style/RepairsEditText"
+                            android:text="2016/09/10 15:00"
+                            android:textColor="@color/text_title" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="故障地址" />
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            style="@style/RepairsEditText"
+                            android:text="南充市顺庆区金泉路151号"
+                            android:textColor="@color/text_title" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="故障类型" />
+
+                        <TextView
+                            android:id="@+id/sp_fault_type"
+                            style="@style/RepairsEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="网络故障"
+                            android:textColor="@color/text_title"></TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="客户联系电话" />
+
+                        <TextView
+                            android:id="@+id/tv_customer_num"
+                            style="@style/RepairsEditText"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:text="18683209890"
+                            android:textColor="@color/text_title" />
+
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <include layout="@layout/item_line_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="故障描述" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <!-- android:text="信号发射器中断引起周边网络故障，信号发射器中断引起周边网络故障。" -->
+                        <TextView
+                            android:id="@+id/tv_description"
+                            style="@style/RepairsEditText"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="16dp"
+                            android:text=""
+                            android:textColor="@color/text_title" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <include layout="@layout/item_line_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="故障图片" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <LinearLayout
+                        android:id="@+id/Ll_photos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/activity_repairs_item_vertical_margin"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="@dimen/activity_repairs_item_vertical_margin">
+
+
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <include layout="@layout/item_line_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff">
+
+                    <TextView
+                        style="@style/RepairsTextTitle"
+                        android:text="紧急程度" />
+
+                    <TextView
+                        android:id="@+id/tv_repairs_urgency_level"
+                        style="@style/RepairsTextValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="非常紧急"
+                        android:textColor="@color/text_title"></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/activity_repairs_item_vertical_margin"
+                        android:layout_marginTop="@dimen/activity_repairs_item_vertical_margin"
+                        android:layout_toLeftOf="@id/tv_repairs_urgency_level"
+                        android:src="@drawable/circle_urgency" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_line_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <include layout="@layout/item_line_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/RepairsTextTitle"
+                            android:text="故障处理时限" />
+
+                        <TextView
+                            android:id="@+id/tv_predict_time"
+                            style="@style/RepairsTextValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017/09/10 15:00"
+                            android:textColor="@color/red300"></TextView>
+
+                    </RelativeLayout>
+                    <!--<include layout="@layout/item_line_horizontal"/>-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:background="#459BEB" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_progress_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:background="#459BEB" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<include layout="@layout/item_progress"/>-->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:background="#459BEB" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- 编辑框 -->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <include layout="@layout/item_line_vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_show_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff">
+
+                                <TextView
+                                    style="@style/RepairsTextTitle"
+                                    android:text="维修状态" />
+                            </RelativeLayout>
+
+                            <include layout="@layout/item_line_horizontal" />
+
+
+                            <RadioGroup
+                                android:id="@+id/rg_repairs_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rb_arrived"
+                                    style="@style/RepairsEditText"
+                                    android:layout_width="0dp"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="0dp"
+
+                                    android:text="到达现场"
+                                    android:textColor="@color/text_title" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rb_repairing"
+                                    style="@style/RepairsEditText"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="0dp"
+                                    android:text="维修中"
+                                    android:textColor="@color/text_title" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rb_repair_complete"
+                                    style="@style/RepairsEditText"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="0dp"
+                                    android:text="维修完成"
+                                    android:textColor="@color/text_title" />
+                            </RadioGroup>
+
+
+                            <include layout="@layout/item_line_horizontal" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff">
+
+                                <TextView
+                                    style="@style/RepairsTextTitle"
+                                    android:text="状态描述" />
+                            </RelativeLayout>
+
+                            <include layout="@layout/item_line_horizontal" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff">
+
+                                <!-- android:text="信号发射器中断引起周边网络故障，信号发射器中断引起周边网络故障。" -->
+                                <EditText
+                                    android:id="@+id/et_progress"
+                                    style="@style/RepairsEditText"
+                                    android:layout_width="match_parent"
+                                    android:background="@android:drawable/edit_text"
+                                    android:gravity="top"
+                                    android:lines="4"
+                                    android:paddingLeft="16dp"
+                                    android:text=""
+                                    android:textColor="@color/text_title" />
+                            </RelativeLayout>
+
+                            <include layout="@layout/item_line_horizontal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#fff">
+
+
+                                    <TextView
+                                        style="@style/RepairsTextTitle"
+                                        android:text="故障图片(长按删除图片)" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_line_horizontal" />
+
+                                <LinearLayout
+                                    android:id="@+id/Ll_progress_photos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#fff"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="@dimen/activity_repairs_item_vertical_margin"
+                                    android:paddingLeft="16dp"
+                                    android:paddingRight="16dp"
+                                    android:paddingTop="@dimen/activity_repairs_item_vertical_margin">
+
+
+                                    <ImageButton
+                                        android:id="@+id/btn_take_photo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@mipmap/icon_add_pic" />
+
+                                </LinearLayout>
+
+                                <include layout="@layout/item_line_horizontal" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/item_comment"
+                    layout="@layout/item_comment"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!-- 一个空的textview占位 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <include layout="@layout/item_repairs_button" />
+
+
+</FrameLayout>

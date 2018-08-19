@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Toolbar Theme / Apply white arrow -->
+     <!--   <item name="colorControlNormal">@android:color/white</item>-->
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ButtonTab">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@drawable/text_tab_selector</item>
+    </style>
+
+    <style name="RepairsTextTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/activity_repairs_item_vertical_margin</item>
+        <item name="android:paddingLeft">16dp</item>
+        <!--<item name="android:paddingRight">16dp</item>-->
+        <item name="android:paddingTop">@dimen/activity_repairs_item_vertical_margin</item>
+        <item name="android:textSize">@dimen/activity_repairs_title_size</item>
+        <item name="android:textColor">@color/text_title</item>
+    </style>
+    <style name="AddCustomerTextTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/activity_repairs_item_vertical_margin</item>
+        <item name="android:paddingLeft">16dp</item>
+        <!--<item name="android:paddingRight">16dp</item>-->
+        <item name="android:paddingTop">@dimen/activity_repairs_item_vertical_margin</item>
+        <item name="android:textSize">@dimen/activity_repairs_title_size</item>
+        <item name="android:textColor">@color/text_title</item>
+    </style>
+    <style name="RepairsTextValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/activity_repairs_item_vertical_margin</item>
+        <!--<item name="android:paddingLeft">16dp</item>-->
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">@dimen/activity_repairs_item_vertical_margin</item>
+        <item name="android:textSize">@dimen/activity_repairs_value_size</item>
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="RepairsTextValueMultiLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/activity_repairs_item_vertical_margin</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">@dimen/activity_repairs_item_vertical_margin</item>
+        <item name="android:textSize">@dimen/activity_repairs_value_size</item>
+        <item name="android:textColor">@color/text_hint</item>
+    </style>
+
+    <style name="RepairsEditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/activity_repairs_item_vertical_margin</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">@dimen/activity_repairs_item_vertical_margin</item>
+        <item name="android:textSize">@dimen/activity_repairs_value_size</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/text_edit</item>
+        <item name="android:paddingLeft">100dp</item>
+    </style>
+
+    <!-- 自定义dialog -->
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- 自定义dialog动画 -->
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/translate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_dialog_out</item>
+    </style>
+    <!--
+    modified 2017/7/18 by 张建银
+    新闻详情页多行标题字体大小修改
+    -->
+    <style name="MultiLineTitleTextFontSize" >
+        <item name="android:textSize">22sp</item>
+    </style>
+
+
+</resources>

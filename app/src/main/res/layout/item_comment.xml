@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+        android:background="@color/write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="评价服务"/>
+
+        </RelativeLayout>
+
+        <RatingBar
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/rb_comment_star"
+            style="@android:style/Widget.Holo.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:scrollbarSize="50dp"
+            android:stepSize="1.0"/>
+
+        <include layout="@layout/item_line_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="@dimen/activity_repairs_item_vertical_margin"
+            android:paddingBottom="@dimen/activity_repairs_item_vertical_margin"
+            android:scrollbars="vertical"
+            android:textSize="@dimen/activity_repairs_title_size"
+            />
+    </LinearLayout>
+</LinearLayout>

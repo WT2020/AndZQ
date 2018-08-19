@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Repairs文字大小 -->
+    <dimen name="activity_repairs_title_size">14sp</dimen>
+    <dimen name="activity_repairs_value_size">14sp</dimen>
+    <dimen name="activity_repairs_spinner_text_size">50sp</dimen>
+    <!-- Repairs条目间距 -->
+    <dimen name="activity_repairs_item_horizontal_margin">10dp</dimen>
+    <dimen name="activity_repairs_item_vertical_margin">10dp</dimen>
+    <!-- Repairs模块间距 -->
+    <dimen name="activity_repairs_module_vertical_margin">15dp</dimen>
+
+</resources>

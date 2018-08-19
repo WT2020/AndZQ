@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <include layout="@layout/item_line_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="故障描述" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <!-- android:text="信号发射器中断引起周边网络故障，信号发射器中断引起周边网络故障。" -->
+            <EditText
+                android:id="@+id/tv_description"
+                style="@style/RepairsEditText"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                 android:hint="请在此输入故障描述"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

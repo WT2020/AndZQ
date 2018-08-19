@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_repairs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/my_toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical"
+        tools:context="hdo.com.andzq.activity.RepairsActivity">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <include layout="@layout/item_repairs_person_info" />
+
+            <include layout="@layout/item_repairs_company_info" />
+
+            <include layout="@layout/item_repairs_description" />
+
+            <include layout="@layout/item_repairs_photos" />
+
+            <include layout="@layout/item_repairs_urgency" />
+
+
+
+            <!-- 一个空的textview占位 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <include layout="@layout/item_repairs_button" />
+
+</FrameLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">服务一点通</string>
+    <!--维修人员我的报修单 详情bean-->
+    <string name="RepairsDetailsBean">RepairsBean</string>
+    <string name="service_staff">{"RESP_STATE":"STATE_SUCCESS","body":[{"name":"李长华","phone":"18980736472","photo":"18980736472","position":"首席客服经理"},{"name":"邓杰","phone":"18980736472","photo":"18980736472","position":"客服经理"},{"name":"李长华","phone":"18980736472","photo":"18980736472","position":"技术总监"},{"name":"李长华","phone":"18980736472","photo":"18980736472","position":"维护工程师"}]}</string>
+    <string name="monthly">{ "RESP_STATE": "STATE_SUCCESS", "body": [ { "complainCount ": "1", "faultCount ": "1", "faultRate": "0.05", "faultTime ": "5", "faultTimely": "0.95", "responseTimely": "0.95", "time": "2017–02", "timeoutCount ": "1" }, { "complainCount ": "1", "faultCount ": "1", "faultRate": "0.05", "faultTime ": "5", "faultTimely": "0.95", "responseTimely": "0.95", "time": "2017-03", "timeoutCount ": "1" } ] }</string>
+    <string name="product">{ "RESP_STATE": "STATE_SUCCESS", "body": [ { "bandwidth": "10M", "level": "AAA", "lines": "467484515", "type": "数据专线" }, { "bandwidth": "100M", "level": "AAA", "lines": "106541665", "type": "数据专线" } ] }</string>
+
+    <!--新建详情模拟数据-->
+    <string name="new_progress">{
+    "RESP_STATE": "STATE_SUCCESS",
+    "body": [
+        {
+            "lineType": "数据专线",
+            "progress": [
+                {
+                    "detail": "新建申请正在等待被处理",
+                    "time": "1493964420000",
+                    "title": "新建申请已提交"
+                },
+                {
+                    "detail": "正在紧张的准备材料",
+                    "time": "1493964420000",
+                    "title": "新建申请处理中"
+                }
+            ],
+            "state": "审核中",
+            "time": "1493964420000"
+        },
+        {
+            "lineType": "互联网专线",
+            "progress": [
+                {
+                    "detail": "新建申请正在等待被处理",
+                    "time": "1493964420000",
+                    "title": "新建申请已提交"
+                },
+                {
+                    "detail": "正在紧张的准备材料",
+                    "time": "1493964420000",
+                    "title": "新建申请处理中"
+                }
+            ],
+            "state": "新建完成",
+            "time": "1493964420000"
+        }
+    ]
+}</string>
+</resources>

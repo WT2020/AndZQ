@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="10dp"
+    >
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="单位名称"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <TextView
+                android:id="@+id/tv_company"
+                style="@style/RepairsTextValueMultiLine"
+                android:text="xxxx"/>
+        </RelativeLayout>
+        <include layout="@layout/item_line_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="专线名称"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <Spinner
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:id="@+id/sp_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </RelativeLayout>
+        <include layout="@layout/item_line_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="专线号码"/>
+
+            <TextView
+                android:id="@+id/tv_sp_line_num"
+                style="@style/RepairsTextValue"
+                android:text=""/>
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="故障出现时间"/>
+
+            <TextView
+                android:id="@+id/tv_downtime"
+                style="@style/RepairsEditText"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:text="2016/09/10 15:00"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal"/>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#fff">-->
+
+            <!--<TextView-->
+                <!--style="@style/RepairsTextTitle"-->
+                <!--android:text="故障地址"/>-->
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/rg_line"-->
+                <!--style="@style/RepairsEditText"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="0dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RadioButton-->
+                    <!--android:checked="true"-->
+                    <!--android:id="@+id/rb_a"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:textSize="@dimen/badge_text_size"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--android:text="A端"/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb_z"-->
+                    <!--android:textSize="@dimen/badge_text_size"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--android:text="Z端"/>-->
+            <!--</RadioGroup>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<include layout="@layout/item_line_horizontal"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="故障出现地址"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <EditText
+                android:id="@+id/tv_location"
+                style="@style/RepairsEditText"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:hint="请输入故障地址"/>
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="故障类型"/>
+
+            <Spinner
+                android:id="@+id/sp_fault_type"
+                style="@style/RepairsTextValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/description_presuppose">
+            </Spinner>
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="客户联系电话"/>
+
+            <EditText
+                android:id="@+id/tv_customer_phone"
+                style="@style/RepairsEditText"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:hint="请输入客户联系电话"/>
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

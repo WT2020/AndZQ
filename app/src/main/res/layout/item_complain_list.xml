@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/recycler_item_selector"
+              android:clickable="true"
+              android:orientation="vertical"
+              android:layout_marginLeft="@dimen/activity_repairs_item_horizontal_margin"
+              android:layout_marginRight="@dimen/activity_repairs_item_horizontal_margin"
+              android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue400"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:textColor="@color/write"
+            android:textStyle="bold"
+            android:text="投诉时间" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/RepairsTextValue"
+            android:textColor="@color/write"
+            android:textStyle="bold"
+            android:text="2017/04/05" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="投诉对象" />
+
+        <TextView
+            android:id="@+id/tv_target"
+            style="@style/RepairsTextValue"
+            android:text="维护工程师" />
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="处理状态" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/RepairsTextValue"
+            android:text="未处理" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

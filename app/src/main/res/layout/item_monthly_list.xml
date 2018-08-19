@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"
+              android:layout_marginLeft="@dimen/activity_repairs_item_horizontal_margin"
+              android:layout_marginRight="@dimen/activity_repairs_item_horizontal_margin"
+              android:background="@drawable/recycler_item_selector"
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue400">
+
+        <ImageButton
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/blue400"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/icon_monthly"/>
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:layout_centerHorizontal="true"
+            android:text="我的月报"
+            android:textColor="@color/write"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/RepairsTextValue"
+            android:text="季度"
+            android:textColor="@color/write"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="季度"/>
+
+        <TextView
+            android:id="@+id/tv_season"
+            style="@style/RepairsTextValue"
+            android:text="5%"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="集团名称"/>
+
+        <TextView
+            android:id="@+id/tv_company"
+            style="@style/RepairsTextValue"
+            android:text="2"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="集团代码"/>
+
+        <TextView
+            android:id="@+id/tv_company_code"
+            style="@style/RepairsTextValue"
+            android:text="5小时"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal"/>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="故障处理及时率"/>
+
+        <TextView
+            android:id="@+id/tv_fault_timely"
+            style="@style/RepairsTextValue"
+            android:text="95%"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="首响及时率"/>
+
+        <TextView
+            android:id="@+id/tv_response_timely"
+            style="@style/RepairsTextValue"
+            android:text="95%"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="超时工单数"/>
+
+        <TextView
+            android:id="@+id/tv_timeout_count"
+            style="@style/RepairsTextValue"
+            android:text="1"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="投诉工单数"/>
+
+        <TextView
+            android:id="@+id/tv_complain_count"
+            style="@style/RepairsTextValue"
+            android:text="1"/>
+    </RelativeLayout>-->
+
+
+</LinearLayout>

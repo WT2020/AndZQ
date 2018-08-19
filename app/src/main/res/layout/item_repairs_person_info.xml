@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+    <include layout="@layout/item_line_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="申请人" />
+
+            <TextView
+                android:id="@+id/tv_proposer"
+                style="@style/RepairsTextValue"
+                android:text="申请人" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="申请时间" />
+
+            <TextView
+                android:id="@+id/tv_application_time"
+                style="@style/RepairsTextValue"
+                android:text="2016/09/10 15:00" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/tv_department"
+                style="@style/RepairsTextValue"
+                android:text="xx部门" />
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="所在部门"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="联系方式" />
+
+            <EditText
+                android:id="@+id/tv_phone_num"
+                style="@style/RepairsEditText"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:text="10086"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

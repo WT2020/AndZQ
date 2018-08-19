@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp">
+    <include layout="@layout/item_line_vertical" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="投诉类型" />
+
+            <TextView
+                android:id="@+id/tv_complain_result_type"
+                style="@style/RepairsTextValue"
+                android:text="业务质量" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="处理部门" />
+
+            <TextView
+                android:id="@+id/tv_deal_company"
+                style="@style/RepairsTextValue"
+                android:text="全业务支撑部" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="投诉对象" />
+
+            <TextView
+                android:id="@+id/tv_complain_result_company"
+                style="@style/RepairsTextValue"
+                android:text="中国移动" />
+
+        </RelativeLayout>
+        <include layout="@layout/item_line_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="投诉时间" />
+            <TextView
+                android:id="@+id/tv_deal_time"
+                style="@style/RepairsTextValue"
+                android:text="2017/4/1" />
+
+        </RelativeLayout>
+        <include layout="@layout/item_line_horizontal" />
+    </LinearLayout>
+
+
+</LinearLayout>

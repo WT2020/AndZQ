@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 缓存的客服信息json串 -->
+    <string name="preference_support_staff">support_staff</string>
+
+    <!-- 用户工号 -->
+    <string name="preference_code" >code</string>
+    <!-- 用户密码 -->
+    <string name="preference_password">password</string>
+    <!-- 用户职位 -->
+    <string name="preference_role_id" >role_id</string>
+    <!-- 服务器token码 -->
+    <string name="preference_token">token</string>
+    <!-- 维修单当前状态 -->
+    <string name="preference_repairs_state">repairs_state</string>
+    <!-- Notification ids -->
+    <string name="preference_repairs_notification">notification</string>
+
+
+
+    <!-- 用户姓名 -->
+    <string name="preference_people_name">people_name</string>
+    <!-- 公司名称 -->
+    <string name="preference_company_name">company_name</string>
+    <!-- 公司编码 -->
+    <string name="preference_company_code">company_code</string>
+    <!-- 公司地址 -->
+    <string name="preference_company_location">company_location</string>
+    <!-- 用户电话号码 -->
+    <string name="preference_people_phone">phone</string>
+
+
+    <!-- 内部人员姓名 -->
+    <string name="inner_manager_name">inner_manager_name</string>
+    <!-- 内部人员公司名称 -->
+    <string name="inner_manager_company">inner_manager_company</string>
+    <!-- 内部人员职位 -->
+    <string name="inner_manager_identity">inner_manager_identity</string>
+    <!-- 内部人员联系方式 -->
+    <string name="inner_manager_phone_num">inner_manager_phone_num</string>
+
+
+
+    <!-- 新闻缓存时间 -->
+    <string name="preference_news_refresh">news_refresh</string>
+
+    <!-- 维修人员姓名 -->
+    <string name="repair_people_name">uName</string>
+    <!-- 分公司名称 -->
+    <string name="repair_company_name">company</string>
+    <!-- 片区 -->
+    <string name="repair_location">district</string>
+    <!-- 身份令牌 -->
+    <string name="repair_identity">uRoles</string>
+    <!-- 联系电话 -->
+    <string name="repair_phone">tel</string>
+</resources>

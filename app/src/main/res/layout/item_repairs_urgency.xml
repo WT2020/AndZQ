@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <include layout="@layout/item_line_vertical" />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="紧急程度" />
+
+        <Spinner
+            android:id="@+id/tv_repairs_urgency_level"
+            style="@style/RepairsTextValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/urgency_level">
+        </Spinner>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/activity_repairs_item_vertical_margin"
+            android:layout_marginTop="@dimen/activity_repairs_item_vertical_margin"
+            android:layout_toLeftOf="@id/tv_repairs_urgency_level"
+            android:src="@drawable/circle_urgency"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_line_horizontal" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            style="@style/RepairsTextTitle"
+            android:text="故障处理时限"/>
+
+        <TextView
+            android:id="@+id/tv_expected_time"
+            style="@style/RepairsEditText"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:text="2016/09/10 15:00"/>
+
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

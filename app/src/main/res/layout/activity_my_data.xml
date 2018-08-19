@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <include layout="@layout/my_toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+
+
+    <include layout="@layout/item_line_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="姓名" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/RepairsTextValue"
+                android:text="陈锐" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="集团公司名称" />
+            <TextView
+                android:id="@+id/tv_company"
+                style="@style/RepairsTextValue"
+                android:layout_width="200dp"
+                android:lines="1"
+                android:gravity="right"
+                android:text="南充市税务局" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="集团公司编码" />
+            <TextView
+                android:id="@+id/tv_company_code"
+                style="@style/RepairsTextValue"
+                android:text="10086" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="集团公司地址" />
+            <TextView
+                android:id="@+id/tv_location"
+                style="@style/RepairsTextValue"
+                android:text="南充市" />
+        </RelativeLayout>
+
+        <include layout="@layout/item_line_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="联系电话" />
+
+            <TextView
+                android:id="@+id/tv_phone_num"
+                style="@style/RepairsTextValue"
+                android:text="123456798" />
+        </RelativeLayout>
+            <include layout="@layout/item_line_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

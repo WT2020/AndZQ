@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 紧急等级 -->
+    <string-array name="urgency_level">
+        <item>一般紧急</item>
+        <item>非常紧急</item>
+    </string-array>
+
+    <!-- 故障描述预设 -->
+    <string-array name="description_presuppose">
+        <item>网络故障</item>
+        <item>网络卡顿</item>
+        <item>设备故障</item>
+    </string-array>
+    <!--投诉部门-->
+    <string-array name="complain_company">
+        <item>公司</item>
+        <item>客户经理</item>
+        <item>维护工程师</item>
+    </string-array>
+    <!--投诉类型-->
+    <string-array name="complain_type">
+        <item>网络</item>
+        <item>业务</item>
+        <item>态度</item>
+    </string-array>
+
+    <!--分公司类型-->
+    <string-array name="fengongsi_type">
+        <item>仪陇分公司</item>
+        <item>营山分公司</item>
+        <item>高坪分公司</item>
+        <item>阆中分公司</item>
+        <item>嘉陵分公司</item>
+        <item>蓬安分公司</item>
+        <item>南部分公司</item>
+        <item>西充分公司</item>
+        <item>顺庆分公司</item>
+        <item>全市</item>
+    </string-array>
+
+    <!--处理状态-->
+    <string-array name="deal_state">
+        <item>未处理</item>
+        <item>已处理</item>
+        <item>已评价</item>
+    </string-array>
+
+    <!--维修单状态-->
+    <string-array name="repairs_state">
+        <item>报修申请已提交</item>
+        <item>维修人员已接单</item>
+        <item>维修人员到达现场</item>
+        <item>紧张维修中</item>
+        <item>维修完成</item>
+        <item>已评论</item>
+        <item>已归档</item>
+    </string-array>
+
+    <!--维修人员看到的维修单状态-->
+    <string-array name="serviceman_repairs_state">
+        <item>未接单</item>
+        <item>已接单</item>
+        <item>到达现场</item>
+        <item>维修中</item>
+        <item>维修完成</item>
+        <item>已评论</item>
+    </string-array>
+    <!--分公司名字-->
+    <string-array name="company_name">
+        <item>仪陇分公司</item>
+        <item>营山分公司</item>
+        <item>高坪分公司</item>
+        <item>阆中分公司</item>
+        <item>嘉陵分公司</item>
+        <item>蓬安分公司</item>
+        <item>南部分公司</item>
+        <item>西充分公司</item>
+        <item>顺庆分公司</item>
+        <item>重要客户中心</item>
+    </string-array>
+
+</resources>

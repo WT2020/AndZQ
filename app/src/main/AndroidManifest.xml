@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hdo.com.andzq">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 主页面activity -->
+        <activity android:name=".activity.MainActivity" />
+        <!-- 登录activity -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- 键盘不将局部顶上去 -->
+        <!-- 报修activity -->
+        <activity
+            android:name=".activity.RepairsActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 投诉activity -->
+        <activity
+            android:name=".activity.ComplainActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 员工信息activity -->
+        <activity android:name=".activity.StaffInfoActivity" />
+
+        <!-- 投诉结果activity -->
+        <activity android:name=".activity.ComplainResultActivity" />
+
+        <!-- 报修结果activity -->
+        <activity android:name=".activity.RepairsResultActivity" />
+
+        <!-- 新闻详情页activity -->
+        <activity
+            android:name=".activity.NewsContentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- ///////////////////这是应用程序入口//////////////// -->
+        <!-- 载入activity -->
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 我的资料activity -->
+        <activity
+            android:name=".activity.MyDataActivity"/>
+
+        <!-- 新建查询列表activity -->
+        <activity android:name=".activity.NewListActivity" />
+
+        <!-- 投诉列表 -->
+        <activity android:name=".activity.ComplainListActivity" />
+
+        <!-- 权限管理 -->
+        <activity android:name=".activity.PermissionManageActivity" />
+
+        <!-- 新建查询 -->
+        <activity android:name=".activity.NewProgressActivity" />
+
+        <!-- 报修列表 -->
+        <activity android:name=".activity.RepairsListActivity" />
+
+        <!-- 维修进度 -->
+        <activity
+            android:name=".activity.RepairsProgressActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 我的维修单 -->
+        <activity android:name=".activity.MyRepairsListActivity" />
+
+        <!-- 我的维修详情（维修人员） -->
+        <activity
+            android:name=".activity.MyRepairsDetailsActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 我的产品 -->
+        <activity android:name=".activity.MyProductActivity" />
+
+        <!-- 我的月报 -->
+        <activity android:name=".activity.MyMonthlyActivity" />
+
+        <!-- 图片选择Activity -->
+        <activity android:name=".activity.ImageCheckActivity" />
+
+        <!-- 新建客户 -->
+        <activity android:name=".activity.AddCustomerActivity" />
+
+        <!-- new客户 -->
+        <activity android:name=".activity.NewCustomerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 收到广播后 启动PushService -->
+        <receiver android:name=".broadcastReceiver.AlarmReceiver" />
+        <!-- 推送引擎在后台的服务 -->
+        <service android:name=".service.PushService" />
+
+        <!-- 文件共享 provider -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- 关于我们Activity -->
+        <activity android:name=".activity.AboutActivity" />
+        <!-- 维修工程师信息 -->
+        <activity android:name=".activity.RepairDataActivity" />
+        <!-- apk更新广播接收者 -->
+        <receiver android:name=".apkUpdate.DownApkReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <!-- apk更新服务 -->
+        <service android:name=".apkUpdate.DownApkService" />
+
+        <activity android:name=".activity.MonthContentActivity" />
+
+        <activity android:name=".activity.CustomerDataActivity"/>
+    </application>
+
+</manifest>

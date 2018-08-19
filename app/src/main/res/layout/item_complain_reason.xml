@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:paddingBottom="10dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="10dp">
+    <include layout="@layout/item_line_vertical" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/RepairsTextTitle"
+                android:text="投诉详情" />
+
+        </RelativeLayout>
+        <include layout="@layout/item_line_horizontal" />
+        <EditText
+            android:id="@+id/et_complain_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:gravity="top"
+            android:background="@android:drawable/edit_text"
+            android:hint="请输入投诉原因"
+            android:textSize="@dimen/activity_repairs_title_size"
+            android:paddingLeft="16dp"
+            android:paddingTop="@dimen/activity_repairs_item_vertical_margin"
+            android:paddingRight="16dp"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:maxLines="8"
+            android:scrollbars="vertical"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_repairs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/my_toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:fadingEdge="vertical"
+        android:background="@color/colorBackground"
+        android:scrollbars="vertical"
+        tools:context="hdo.com.andzq.activity.RepairsActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <include layout="@layout/item_line_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/AddCustomerTextTitle"
+                            android:text="用户名" />
+
+                        <EditText
+                            android:inputType="text"
+                            android:id="@+id/edit_add_customer_name"
+                            style="@style/RepairsEditText"
+                            android:hint="请输入用户名"
+                            android:textColor="@color/text_title" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/AddCustomerTextTitle"
+                            android:text="账号" />
+
+                        <EditText
+                            android:inputType="number"
+                            android:id="@+id/edit_add_customer_num"
+                            style="@style/RepairsEditText"
+                            android:hint="请输入账号"
+                            android:textColor="@color/text_title" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <EditText
+                            android:id="@+id/edit_add_customer_pass"
+                            style="@style/RepairsEditText"
+                            android:hint="请输入密码"
+                            android:textColor="@color/text_title" />
+
+                        <TextView
+                            style="@style/AddCustomerTextTitle"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="密码" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                </LinearLayout>
+
+                <include layout="@layout/item_line_vertical" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <include layout="@layout/item_line_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/AddCustomerTextTitle"
+                            android:text="分公司" />
+
+                        <TextView
+                            android:paddingRight="15dp"
+                            android:text="仪陇分公司"
+                            android:id="@+id/tv_customer_company"
+                            style="@style/AddCustomerTextTitle"
+                            android:layout_alignParentRight="true"
+                            android:entries="@array/company_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/AddCustomerTextTitle"
+                            android:text="二级机构" />
+
+                        <EditText
+                            android:inputType="text"
+                            android:id="@+id/edit_add_customer_organization_type"
+                            style="@style/RepairsEditText"
+                            android:hint="请输入二级机构"
+                            android:textColor="@color/text_title" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/AddCustomerTextTitle"
+                            android:text="职位" />
+
+                        <TextView
+                            android:id="@+id/edit_add_customer_type"
+                            style="@style/RepairsEditText"
+                            android:text="政企客户"
+                            android:textColor="@color/text_title" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <TextView
+                            style="@style/AddCustomerTextTitle"
+                            android:text="联系方式" />
+
+                        <EditText
+                            android:id="@+id/edit_add_customer_phone"
+                            style="@style/RepairsEditText"
+                            android:hint="请输入联系方式"
+                            android:inputType="phone"
+                            android:textColor="@color/text_title" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                    <include layout="@layout/item_line_horizontal" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:background="#459BEB" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_progress_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:background="#459BEB" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<include layout="@layout/item_progress"/>-->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:background="#459BEB" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 编辑框 -->
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/item_repairs_button" />
+</FrameLayout>
+
